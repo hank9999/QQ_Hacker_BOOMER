@@ -35,8 +35,12 @@ def start_bom():
             print("Error!(Maybe timeout)")
 
 
-event_obj = threading.Event()
-for i in range(32):  # 简易多线程
-    t = threading.Thread(target=start_bom(), args=(event_obj,))
-    t.setDaemon(True)
-    t.start()
+if __name__ == "__main__":
+    event_obj = threading.Event()
+    for i in range(256):  # 简易多线程
+        try:
+            t = threading.Thread(target=start_bom(), args=(event_obj,))
+            t.setDaemon(True)
+            t.start()
+        except:
+            print("Thread Create Error!")

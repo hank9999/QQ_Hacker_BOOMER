@@ -27,8 +27,8 @@ for i in range(32):  # 简易多线程
 ```
 ## 三、启动
 ### Windows 平台
-在对应目录打开cmd，执行python main_GET.py / python main_POST.py启动
-结束时关闭关闭窗口即可结束
+##### 在对应目录打开cmd，执行python main_GET.py / python main_POST.py启动
+##### 结束时 Ctrl+C 或 关闭窗口 均可结束
 ### Linux 平台
-在对应目录执行python3 main_GET.py / python3 main_POST.py启动
-结束时Ctrl+C将其结束
+##### 在对应目录执行python3 main_GET.py / python3 main_POST.py启动
+##### 结束时 Ctrl+C 将其结束

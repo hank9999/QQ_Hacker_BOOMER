@@ -10,28 +10,43 @@
 ### 抓包后修改提交格式
 #### 1.修改url部分
 POST修改位置
-```
+```python
 r = requests.post(url='http://xxx.com/up.php',
                   data={'u': user1, 'p': userpass, 'tijiao': '%E6%8F%90%CD%8F%CD%8F%CD%8F%CD%8F%E4%BA%A4'},
                   headers={'Conten  t-Type': 'application/x-www-form-urlencoded'},
                   timeout = 2)
 ```
 GET修改位置
-```
+```python
 url = "http://xxxx.com/up.php?" + "user=" + user1 + "&pass=" + userpass
 ```
 #### 2.修改线程
 修改位置，默认32线程
-```
+```python
 for i in range(32):  # 简易多线程
 ```
-### 双击start.bat启动
+### 在对应目录打开cmd，执行python main_GET.py / python main_POST.py启动
 ### 关闭关闭窗口即可结束
 
 
 ## Linux 平台
 ### 安装python3
-### 抓包后修改提交格式
-### ./start.sh启动 （记得给予执行权限chmod +x start.sh）
+#### 1.修改url部分
+POST修改位置
+```python
+r = requests.post(url='http://xxx.com/up.php',
+                  data={'u': user1, 'p': userpass, 'tijiao': '%E6%8F%90%CD%8F%CD%8F%CD%8F%CD%8F%E4%BA%A4'},
+                  headers={'Conten  t-Type': 'application/x-www-form-urlencoded'},
+                  timeout = 2)
+```
+GET修改位置
+```python
+url = "http://xxxx.com/up.php?" + "user=" + user1 + "&pass=" + userpass
+```
+#### 2.修改线程
+修改位置，默认32线程
+```python
+for i in range(32):  # 简易多线程
+```
+### 在对应目录执行python3 main_GET.py / python3 main_POST.py启动
 ### Ctrl+C将其结束
-（若无法结束，请使用Ctrl+Z暂停，然后kill %1）

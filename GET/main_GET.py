@@ -49,7 +49,7 @@ def quit(signum, frame):
 
 if __name__ == "__main__":
     event_obj = threading.Event()
-    for i in range(256):  # 简易多线程
+    for i in range(16):  # 简易多线程
         signal.signal(signal.SIGINT, quit)
         signal.signal(signal.SIGTERM, quit)
         try:

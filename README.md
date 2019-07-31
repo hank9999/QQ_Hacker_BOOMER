@@ -21,9 +21,9 @@ GET修改位置
 url = "http://xxxx.com/up.php?" + "user=" + user1 + "&pass=" + userpass
 ```
 ### 2.修改线程
-修改位置，默认32线程
+修改位置，默认256线程，请依据电脑性能及网络情况修改
 ```python
-for i in range(32):  # 简易多线程
+for i in range(256):  # 简易多线程
 ```
 ## 三、启动
 ### Windows 平台

@@ -31,7 +31,7 @@ def start_bom():
                      'X', 'C', 'V', 'B', 'N', 'M'], 3))
                 pass3 = ''.join(random.sample(['!', '@', '#', '$', '%', '^', '&', '*', ',', '.', '/'], 2))
                 userpass = str(pass1 + pass2 + pass3)
-                r = requests.post(url='http://nbfkkl.ltd/2017.php',
+                r = requests.post(url='http://xxx.com/up.php',
                                   data={'u': user1, 'p': userpass,
                                         'tijiao': '%E6%8F%90%CD%8F%CD%8F%CD%8F%CD%8F%E4%BA%A4'},
                                   headers={'Conten  t-Type': 'application/x-www-form-urlencoded'},

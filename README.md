@@ -8,7 +8,7 @@
 ## Windows 平台
 ### 安装python3
 ### 抓包后修改提交格式
-#### 1.修改url部分
+#### 1.修改url部分(如可能需要base64加密或时间戳，请在循环内部添加)
 POST修改位置
 ```python
 r = requests.post(url='http://xxx.com/up.php',
@@ -31,7 +31,7 @@ for i in range(32):  # 简易多线程
 
 ## Linux 平台
 ### 安装python3
-#### 1.修改url部分
+#### 1.修改url部分(如可能需要base64加密或时间戳，请在循环内部添加)
 POST修改位置
 ```python
 r = requests.post(url='http://xxx.com/up.php',

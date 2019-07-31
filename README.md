@@ -2,12 +2,12 @@
 
 骗子轰炸框架，请根据抓包格式修改
 
-# 请先抓包确定GET或POST再使用对应文件夹里的文件
+请先抓包确定GET或POST再使用对应文件夹里的文件
 
 # 使用方法
 
-## 安装python3
-## 抓包后修改提交格式
+## 一、安装python3
+## 二、抓包后修改提交格式
 ### 1.修改url部分(如可能需要base64加密或时间戳，请在循环内部添加)
 POST修改位置
 ```python
@@ -25,7 +25,7 @@ url = "http://xxxx.com/up.php?" + "user=" + user1 + "&pass=" + userpass
 ```python
 for i in range(32):  # 简易多线程
 ```
-## 启动
+## 三、启动
 ### Windows 平台
 在对应目录打开cmd，执行python main_GET.py / python main_POST.py启动
 结束时关闭关闭窗口即可结束

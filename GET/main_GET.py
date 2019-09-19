@@ -10,11 +10,10 @@ is_exit = 0
 
 
 def start_bom():
-    var = 1
     global is_exit
-    while var == 1:
+    while 1:
         if is_exit == 1:
-            sys.quit()
+            sys.exit()
         else:
             try:
                 global times

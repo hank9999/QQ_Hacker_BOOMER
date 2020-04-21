@@ -7,7 +7,7 @@ headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleW
 
 async def request(url, params):
     async with aiohttp.ClientSession() as session:
-        async with session.get(url, params = params, headers=headers) as resp:
+        async with session.get(url, params = params, headers=headers, timeout=1) as resp:
             return [resp.status, await resp.text()]
 
 async def once(url):
@@ -18,7 +18,7 @@ async def once(url):
     password = str(pass1) + str(pass2) + str(pass3)
     params = {'user': user1, 'pass': password}
     status, text = await request(url, params)
-    print(user1 + ':' + password + ' ' + str(status))
+    print(user1 + ':' + password + ' ' + str(status) + ' ' + str(text))
 
 def main(url, n):
     loop = asyncio.get_event_loop()

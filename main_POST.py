@@ -1,8 +1,6 @@
 import random
 import string
 import asyncio, aiohttp
-import threading
-import signal
 import sys
 
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36'}
